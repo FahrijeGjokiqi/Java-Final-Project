@@ -41,9 +41,11 @@ body{
 }
 
 .header a{
-    margin: 25px;
+    margin: 20px;
     text-decoration: none;
     color: rgb(228, 197, 156);
+    font-weight: bold;
+    
     
 
 }
@@ -59,8 +61,8 @@ nav {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     transition: width 0.6s linear;
   }
-  nav.active {
-    width: 350px;
+  nav.links {
+    width: 450px;
   }
   
   nav ul {
@@ -72,8 +74,8 @@ nav {
     transition: width 0.6s linear;
   }
   
-  nav.active ul {
-    width: 100%;
+  nav.links ul {
+    width: 100%
   }
   
   nav ul li {
@@ -82,7 +84,7 @@ nav {
     transition: transform 0.6s linear, opacity 0.6s linear;
   }
   
-  nav.active ul li {
+  nav.links ul li {
     opacity: 1;
     transform: rotateY(360deg);
   }
@@ -109,7 +111,7 @@ nav {
   }
   
   .icon .line {
-    background-color: #5290f9;
+    background-color: #ceb264;
     height: 2px;
     width: 20px;
     position: absolute;
@@ -123,15 +125,57 @@ nav {
     bottom: 10px;
   }
   
-  nav.active .icon .line1 {
+  nav.links .icon .line1 {
     transform: rotate(-765deg) translateY(5.5px);
   }
   
-  nav.active .icon .line2 {
+  nav.links .icon .line2 {
     transform: rotate(765deg) translateY(-5.5px);
   }
-  
 
+
+  .search {
+    position: relative;
+    height: 50px;
+    display: flex;
+    overflow: hidden;
+  }
+  
+  .search .input {
+    background-color: #ceb264;
+    border: 0;
+    height: 35px;
+    width: 25px;
+    transition: width 0.3s ease;
+  }
+
+  
+  
+  .btn {
+    background-color: #ceb264;
+    cursor: pointer;
+    font-size: 24px;
+    height: 35px;
+    width: 35px;
+    transition: transform 0.3s ease;
+    border: 0;
+    top: 0;
+    left: 10px;
+  }
+  
+  .btn:focus,
+  .input:focus {
+    outline: none;
+  }
+  
+  .search.active .input {
+    width: 200px;
+  }
+  
+  .search.active .btn {
+    transform: translateX(5px);
+  }
+  
 
 .text h1{
     margin-left: 0;
@@ -269,6 +313,8 @@ body{
     border: 1px solid rgb(107, 101, 101);
     box-sizing: border-box;
     outline: none;
+    background-color: #ceb264;
+    color: white;
 }
 
 .register-1 input [type="checkbox"] {
@@ -279,30 +325,35 @@ body{
     padding: 0;
     position: absolute;
     width: 1px;
+    background-color: #ceb264;
     
 }
 
 #user{
     width: 88%;
     height: 30px;
+    background-color: #ceb264;
+    border: 1px solid rgb(107, 101, 101);
 }
 
 #uadress{
     width:88%;
     height: 30px;
+    background-color: #ceb264;
+    border: 1px solid rgb(107, 101, 101);
 }
 
 .animation-background:before{
  position: absolute;
  top:0;
  left:0;
- background: url(../falling-snow-gif-transparent-background-4.png);
+ background: url(../9558b95660d31cdbfb19167da2a707f4.gif);
  background-repeat:repeat;
  background-position: center;
 animation: snowfall 8s linear infinite;
 content: '';
 width: 100%;
-height: 90%;
+height: 100%;
 }
 
 @keyframes snowfall{

@@ -1,4 +1,13 @@
 const toggle = document.getElementById('toggle')
-const linked = document.getElementById('linked')
+const nav = document.getElementById('nav')
 
-toggle.addEventListener('click', () => nav.classList.toggle('active'))
+toggle.addEventListener('click', () => nav.classList.toggle('links'))
+
+const search = document.querySelector('.search')
+const btn = document.querySelector('.btn')
+const input = document.querySelector('.input')
+
+btn.addEventListener('click', () => {
+    search.classList.toggle('active')
+    input.focus()
+})
