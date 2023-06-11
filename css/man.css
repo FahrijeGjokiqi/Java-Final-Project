@@ -1,0 +1,280 @@
+
+.header-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+}
+
+.lg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 15px;
+    left:0;
+    right:0;
+    bottom: 0;
+}
+
+.image-1{
+    display: flex;
+    flex-direction: row;
+}
+
+.image-1 img{
+    width:250px;
+    height: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-1 .lg a{
+    margin: 20px;
+    text-decoration: none;
+    color: rgb(228, 197, 156);
+    font-weight: bold;
+}
+
+nav {
+    background-color: #fff;
+    padding: 20px;
+    width: 35px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px #ceb264;
+    transition: width 0.6s linear;
+    margin-top: 20px;
+  }
+  nav.links {
+    width: 450px;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    width: 0;
+    transition: width 0.6s linear;
+  }
+  
+  nav.links ul {
+    width: 100%
+  }
+  
+  nav ul li {
+    transform: rotateY(0deg);
+    opacity: 0;
+    transition: transform 0.6s linear, opacity 0.6s linear;
+  }
+  
+  nav.links ul li {
+    opacity: 1;
+    transform: rotateY(360deg);
+  }
+  
+  nav ul a {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .icon {
+    background-color: #fff;
+    border: 0;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 30px;
+  }
+  
+  .icon:focus {
+    outline: 0;
+  }
+  
+  .icon .line {
+    background-color: #ceb264;
+    height: 2px;
+    width: 20px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: transform 0.6s linear;
+  }
+  
+  .icon .line2 {
+    top: auto;
+    bottom: 10px;
+  }
+  
+  nav.links .icon .line1 {
+    transform: rotate(-765deg) translateY(5.5px);
+  }
+  
+  nav.links .icon .line2 {
+    transform: rotate(765deg) translateY(-5.5px);
+  }
+
+  #scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #ceb264;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 7px;
+  }
+  
+  #scrollButton:hover {
+    background-color: #ec811d;
+  }
+
+
+     
+.footer{
+  background-color: black;
+  box-sizing: border-box;
+  padding: 70px 0;
+  width: 100%;
+  margin-top: 25px;
+}
+
+
+
+.container{
+  max-width: 1170px;
+  background-color:black; 
+  margin: auto;
+  width: 100%;
+  height: auto;
+}
+
+.row-container{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-left: 110px;
+
+  
+}
+
+ul{
+  list-style: none;
+}
+
+.footer-column{
+  width:25%;
+  padding: 0 15px;
+  
+}
+
+.footer-column h3{
+  font-size: 24px;
+  color: #ceb264;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  font-weight: 800;
+  position: relative;
+  border-bottom: 1px solid;
+  
+}
+
+
+.footer-column ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ceb264;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  margin-top: 15px;
+  margin-left: 35px;
+  
+}
+
+.mail{
+  font-size: 16px;
+  color: #ceb264;
+  margin-bottom: 30px;
+  font-weight: 300;
+  position: relative;
+  
+}
+
+.footer-column input{
+  width: 250px;
+  height: 25px;
+  background-color: rgb(228, 221, 218);
+  opacity: 0.8;
+  
+}
+
+.footer-column button{
+  width: 30px;
+  height: 25px;
+ background-color: rgb(228, 221, 218);
+ opacity: 0.8;
+}
+
+.footer-column .social-links a{
+  display: inline-block;
+  height:40px;
+  width:40px;
+  background-color: #ceb264;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  
+}
+
+.footer-column .social-links i{
+  color: black;
+}
+
+.footer-column .social-links p{
+  margin-left: 50px;
+  margin-top: 20px;
+  
+}
+
+.footer-column .social-links span{
+  margin-left: 47px;
+}
+
+.footer-column .services h3{
+  margin-left: 35px;
+}
+
+
+.footer-1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.2);
+  height: 40px;
+  width: 100%;
+  padding-top: 25px;
+  align-items: center;
+}
+
+.footer-rights p{
+  font-weight: bold;
+}
+
+.footer-date{
+  font-weight: bold;
+}

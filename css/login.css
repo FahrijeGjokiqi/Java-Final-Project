@@ -1,7 +1,6 @@
 
 body{
     background-color: white;
-    background-image: url(../pexels-photo-13600672.webp);
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -16,6 +15,7 @@ body{
     left:0;
     right:0;
     bottom: 0;
+    position: fixed;
 }
 
 .lg{
@@ -26,11 +26,14 @@ body{
     left:0;
     right:0;
     bottom: 0;
+    position: relative;
 }
 
 .image-1{
     display: flex;
     flex-direction: row;
+    
+    
 }
 
 .image-1 img{
@@ -38,6 +41,7 @@ body{
     height: 100px;
     align-items: center;
     justify-content: space-between;
+    margin-left: 600px;
 }
 
 .header a{
@@ -45,21 +49,19 @@ body{
     text-decoration: none;
     color: rgb(228, 197, 156);
     font-weight: bold;
-    
-    
-
 }
 
 nav {
     background-color: #fff;
     padding: 20px;
-    width: 80px;
+    width: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 3px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 5px #ceb264;
     transition: width 0.6s linear;
+    position: fixed;
   }
   nav.links {
     width: 450px;
@@ -134,7 +136,7 @@ nav {
   }
 
 
-  .search {
+  /* .search {
     position: relative;
     height: 50px;
     display: flex;
@@ -147,7 +149,7 @@ nav {
     height: 35px;
     width: 25px;
     transition: width 0.3s ease;
-  }
+  } */
 
   
   
@@ -160,7 +162,7 @@ nav {
     transition: transform 0.3s ease;
     border: 0;
     top: 0;
-    left: 10px;
+    left: 0;
   }
   
   .btn:focus,
@@ -201,66 +203,6 @@ body{
 }
 
 
-.access{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top:50px;
-    margin-left:20px;
-    margin-right:20px;
-    bottom: 0;
-    background-color: rgb(241, 233, 233);
-    align-items: center;
-}
-
-
-.row{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.row a{
-    margin-top: 25px;
-    margin: 15px;
-    text-decoration: none;
-    color:#ceb264;
-    
-
-}
-.home {
-    background-color: #ceb264!important;
-    color:white !important;
-    
-    text-align: center;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-bottom: 15px;
-}
-
-.search{
-    padding-top: 20px;
-}
-
-.search input{
-    align-items: center;
-    margin-bottom: 20px;
-    border: none;
-    border-radius: 2px;
-    color: black;
-    font-weight: 500;
-    width:150px;
-    height:35px;
-    
-}
-
-.input-1{
-    background-color: #ceb264;
-    color:white;
-    margin-left: 10px;
-    margin-right: 15px;
-}
 .register {
     background: rgb(228, 221, 218);
     width: 600px;
@@ -524,8 +466,23 @@ ul{
     font-weight: bold;
 }
 
-.header a:hover {
-    border-bottom: 2px dotted black;
-    box-shadow:rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    ;
-}
+#scrollButton {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: #ceb264;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 7px;
+  }
+  
+  #scrollButton:hover {
+    background-color: #ec811d;
+  }
+  
