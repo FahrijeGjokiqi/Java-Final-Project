@@ -21,3 +21,5 @@ function scrollToTop() {
     }
   };
   
+  $('.slide').hiSlide();
+  
